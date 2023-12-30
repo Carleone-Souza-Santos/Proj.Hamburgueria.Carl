@@ -1,0 +1,69 @@
+:root {
+
+    --color-Red: #ff0f07;
+    --color-Yel: #FFFF00;
+}
+
+.toggle-container {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-left: 10px;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+
+
+}
+
+.toggle input {
+    display: none;
+
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var( --color-Yel);
+    background-color: transparent;
+    border: 0.2px solid var(--color-Yel);
+    border-radius: 34px;
+    transition: 0.4s;
+    
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    transition: 0.4s;
+    background-image: url(arsset/icons8-summer-48.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+input:checked+.slider {
+    
+   background: #0d0338;
+}
+
+input:checked+.slider:before {
+    transform: translateX(23px);
+    background-image: url(arsset/icons8-moon-and-stars-48.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
