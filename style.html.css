@@ -53,7 +53,7 @@ header {
     border-radius: 50px;
     margin: 4px;
     border: 1px solid var(--color_btna);
-
+   
 }
 
 #logo {
@@ -67,7 +67,7 @@ header {
     margin: 10px;
     border: 1px solid var(--color_btna);
     padding: 7px;
-
+    border:1px solid rgb(255, 0, 179);
 }
 
 h1 {
@@ -420,4 +420,26 @@ footer{
             margin: 5px;
             width: 70%;
         }
+        
 }
+
+@media only screen and (max-width: 500px){
+
+    ul {
+        list-style: none;
+        display: grid;
+        justify-content: center;
+        grid-template-columns:  400px;
+        gap: 10px;
+        z-index: -100;
+    }
+   
+}.box-logo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: none;
+    margin-top: -55px;
+    margin-right: 30px;
+}
+
