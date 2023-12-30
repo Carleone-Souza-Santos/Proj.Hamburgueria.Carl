@@ -66,7 +66,7 @@ function SelectMap() {
 
 // is checking whether the database liqui and true
     function SelectDrinks() {
-        const DrinksOptions = menuOptions.filter((option) => option.liqui === true)
+        const DrinksOptions = menuOptions.filter((option) => option.Drink === true)
         SelectForeach(DrinksOptions)
 
 }
