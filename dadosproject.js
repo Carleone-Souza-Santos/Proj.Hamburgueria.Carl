@@ -2,8 +2,8 @@ const listoutgoinglist = document.querySelector('ul')
 const ExecutForEach = document.querySelector('#PlayForeach')
 const ExecutMap = document.querySelector('#eventMap')
 const Executreduc = document.querySelector('#PlayReduce')
-const Executfilter = document.querySelector('#Playfilte')
-const Executfilsuc = document.querySelector('#Playfilsuco')
+const ExecutfilterVeget = document.querySelector('#Playfilte')
+const ExecutfilDrick = document.querySelector('#Playfilsuco')
 
 // apply foreach with parameter applied to an array element in html
 function SelectForeach(All) {
@@ -65,14 +65,14 @@ function SelectMap() {
 }
 
 // is checking whether the database liqui and true
-    function Selectjuice() {
-        const juiceOption = menuOptions.filter((option) => option.liqui === true)
-        SelectForeach(juiceOption)
+    function SelectDrinks() {
+        const DrinksOptions = menuOptions.filter((option) => option.liqui === true)
+        SelectForeach(DrinksOptions)
 
 }
 
 ExecutForEach.addEventListener('click', () => SelectForeach(menuOptions))
 ExecutMap.addEventListener('click', SelectMap)
 Executreduc.addEventListener('click', SelectReduce)
-Executfilter.addEventListener('click', selectburgervegetable)
-Executfilsuc.addEventListener('click', Selectjuice)
+ExecutfilterVeget.addEventListener('click', selectburgervegetable)
+ExecutfilDrick.addEventListener('click', SelectDrinks)
